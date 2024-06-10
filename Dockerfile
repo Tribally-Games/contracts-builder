@@ -6,7 +6,7 @@ RUN apt install -y g++ make curl git
 SHELL ["/bin/bash", "-c"]
 RUN curl -sSf https://sh.rustup.rs | bash -s -- -y
 RUN echo "source ~/.cargo/env" > ~/.bashrc
-RUN source ~/.bashrc && cargo install svm-rs && svm install 0.7.6 && svm install 0.8.21 && svm use 0.8.21
+RUN source ~/.bashrc && cargo install svm-rs && svm install 0.7.6 && svm install 0.8.24 && svm use 0.8.24
 RUN curl -L https://foundry.paradigm.xyz | bash
 RUN source ~/.bashrc && foundryup
 
